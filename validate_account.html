@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var input = prompt("Nhập password của bạn");
+        function checkAccount(str) {
+            var rule = /^[_a-z0-9]{6,}$/;
+            if (rule.test(str)) {
+                alert(" password " + str + " hợp lệ")
+            } else {
+                alert(" password " + str + " không hợp lệ")
+            }
+        }    checkAccount(input);
+    </script>
+
+</body>
+</html>
